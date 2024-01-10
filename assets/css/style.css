@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap');
+
+:root{
+    --font:'Poppins', sans-serif;
+    --Preto: #060506;
+    --Preto-Claro:#3C3C3C;
+    --Azul: #023059;
+    --Azul-Ciano: #0396A6;
+    --Laranja-Claro: #DEA153;
+    --Branco: #F5F5F5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--Preto-Claro);
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 120px;
+    background-color: var(--Azul-Ciano);
+    box-shadow: 0px 1px 14px 2px var(--Preto);
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.logo-header{
+    height: 120px;
+    padding: 0px 30px;
+    cursor: pointer;
+    transition: .4s ease-out;
+}
+
+.logo-header:hover{
+    transform: scale(1.09);
+}
+
+nav{
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--Branco);
+    font-size: 23px;
+    font-weight: bold;   
+    margin-right: 30px;
+}
+
+.nav-item{
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--Branco);
+    position: relative;
+    padding: 6px;
+    transition: .4s ease-in-out;
+}
+
+a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: var(--Azul);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    transition: .5s ease-in-out;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+.carrosel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#categorias{
+    background-color: var(--Azul);
+    text-align: center;
+    color: var(--Branco);
+    padding: 10px;
+    border-radius: 50px;
+    width: 300px;
+    margin: 10px auto;
+    font-size: 35px;
+    cursor: default;
+    box-shadow: 0px 0px 6px 1px var(--Preto);
+}
+
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+    color: var(--Branco);
+    margin: 50px auto;
+}
+
+.collum{
+    background-color: var(--Azul);
+    box-shadow: 0px 0px 6px 2px var(--Laranja-Claro);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 500px;
+    border-radius: 15px;
+}
+
+.title-categorias{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.img-conteudo{
+    width: 100%;
+}
+
+.conteudo{
+    background-color: cadetblue;
+    border-radius: 10px;
+    transition: 0.95s;
+    cursor: pointer;
+    gap: 16px;
+    text-align: center;
+}
+
+.conteudo:hover{
+    border: 2px solid var(--Branco);
+    background-color: var(--Azul-Ciano);
+    transform: scale(1.06);
+}
+
+.convidados{
+    display: flex;
+    width: 75vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Azul);
+    margin: 10px auto;
+    border-radius: 8px;
+    padding-top: 13px;
+    box-shadow: 0px 0px 6px 2px var(--Preto);
+}
+
+.title-convidados{
+    color: var(--Branco);
+    border-bottom: solid 2px var(--Branco);
+    box-shadow: 0px ;
+}
+
+.informacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.convidado{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 25px;
+    background-color: var(--Preto-Claro);
+    border-radius: 10px;
+      
+}
+
+#direitos{
+    color: var(--Branco );
+    margin-right: 50px;
+    font-size: 25px;
+}
+
+#suport{
+    margin-right: 100px;
+    font-size: 25px;
+}
+
+.logo-footer{
+    width: 430px;
+    height: 250px;
+}
+
+#img-footer{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    box-shadow: 0px -3px 20px 2px var(--Preto);
+    margin-top: 50px;
+    display: flex;
+    background-color: var(--Azul-Ciano);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
